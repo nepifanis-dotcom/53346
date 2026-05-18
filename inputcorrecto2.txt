@@ -1,0 +1,4 @@
+programa AlgoritmoSuma {
+    total = 45 + (10 - 5);
+    Imprimir(total);
+}
