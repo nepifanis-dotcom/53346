@@ -1,7 +1,0 @@
-<programa> ::= "programa" <identificador> "{" {<instrucción> }* "}"; <instrucción> ::= <asignación> | <excepción> | <bloque> | <imprimir>; <asignación> ::= <identificador> "=" <expresión> ";"; <excepción> ::= "procesar" <bloque> "manejarError" "("<identificador> ")"
-
-<bloque> ".":
-
-<bloque>::= "{" { <instrucción> }* "}";
-
-<imprimir> ::= "imprimir" "(" <expresión> ")" ";"; <expresión> ::= <término> { ("+" | "-" | "*" | "/") <término> }; <término> ::= <número> | <identificador> | "(" <expresión> ")"; <número> := <dígito> {<dígito> }* ["" <dígito> {<dígito> }*]; <identificador>::= <letra> {<letra> | <dígito> | "_"}*; <letra> ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z" ; <dígito> ::= "O" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
