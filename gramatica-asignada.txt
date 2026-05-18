@@ -1,0 +1,12 @@
+<programa> ::= "programa" <identificador> "{" { <instruccion> ";" } "}"
+<instruccion> ::= <asignacion> | <excepcion> | <bloque> | <imprimir>
+<asignacion> ::= <identificador> "=" <expresion>
+<excepcion> ::= "procesar" <bloque> "manejarError" "(" <identificador> ")" <bloque>
+<bloque> ::= "{" { <instruccion> ";" } "}"
+<imprimir> ::= "Imprimir" "(" <expresion> ")"
+<expresion> ::= <termino> { ( "+" | "-" ) <termino> }
+<termino> ::= <número> | <identificador> | "(" <expresion> ")"
+<número> ::= <digito> { <digito> }
+<identificador> ::= <letra> { <letra> | <digito> | "_" }
+<letra> ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
+<digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
