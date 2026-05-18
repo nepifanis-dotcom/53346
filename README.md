@@ -1,6 +1,6 @@
 # 53346
 para clonar el repositorio 
-https://github.com/nepifanis.com/53346.git
+https://github.com/nepifanis-dotcom/53346
 PASOS PARA EJECUTAR 
 
 ## Clonar el repositorio
